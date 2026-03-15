@@ -96,8 +96,8 @@ const AboutPage = () => {
               style={{ background: 'rgba(91,200,255,.08)', transform: 'translate(12px,12px)' }}
             />
             <img
-              src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80"
-              alt="Team gaming setup"
+              src=""
+              alt="Team"
               className="w-full relative z-10"
               style={{ height: 420, objectFit: 'cover', filter: 'grayscale(.3) brightness(.85)', border: '1px solid rgba(91,200,255,.15)' }}
             />

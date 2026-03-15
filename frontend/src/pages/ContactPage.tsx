@@ -10,7 +10,7 @@ const SOCIALS = [
     url: 'https://x.com/oce5n',
     icon: SiX,
     color: '#e7e9ea',
-    desc: 'Match updates, announcements and real-time coverage.',
+    desc: 'Announcements and real-time coverage.',
   },
 ];
 

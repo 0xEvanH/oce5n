@@ -1,0 +1,42 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# env files
+.env
+.env.local
+.env.*.local
+server/.env
+
+# build output
+dist/
+build/
+
+# vite
+.vite/
+
+# bun
+bun.lockb
+*.bun
+
+# typescript
+*.tsbuildinfo
+
+# editor
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# logs
+*.log
+npm-debug.log*
+bun-debug.log*
+
+# os
+.DS_Store
+desktop.inifrontend/public/*.mp4
+frontend/public/*.mov

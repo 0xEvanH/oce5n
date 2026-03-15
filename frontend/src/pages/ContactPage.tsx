@@ -1,5 +1,5 @@
 import type { MouseEvent } from 'react';
-import { SiX, SiInstagram, SiTwitch, SiYoutube, SiDiscord, SiTiktok } from 'react-icons/si';
+import { SiX } from 'react-icons/si';
 import useReveal from '../useReveal';
 import SectionLabel from '../components/SectionLabel';
 

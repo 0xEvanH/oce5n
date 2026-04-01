@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Block internal/utility paths from indexing
+Disallow: /admin/
+Disallow: /api/
+Disallow: /dashboard/
+Disallow: /_next/
+Disallow: /static/chunks/
+
+# Sitemap location
+Sitemap: https://oce5n.com/sitemap.xml

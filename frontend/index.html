@@ -1,13 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/oce5nwhite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ═══════════════════════════════════════════════════════════
+         OCE5N ESPORTS — Base SEO (static fallback / pre-render)
+         Dynamic overrides applied per-route via <SEO /> component
+    ═══════════════════════════════════════════════════════════ -->
+
+    <!-- Primary Meta Tags -->
     <title>OCE5N</title>
+    <meta name="title" content="OCE5N Esports | #The71Percent - Multi-Media Gaming Team" />
+    <meta
+      name="description"
+      content="OCE5N is a multi-media esports & gaming team based in Columbus, Ohio. Competing, creating, and building community since 2022. Powered by SocialSight, Hypertune & Sonix."
+    />
+    <meta
+      name="keywords"
+      content="OCE5N, Oce5n Esports, The71Percent, gaming team, esports, Columbus Ohio, Fortnite, FNCS, tournament, competitive gaming, multi-media gaming, OCE5NS"
+    />
+    <meta name="author" content="OCE5N Esports" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0ff" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://oce5n.com/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://oce5n.com/" />
+    <meta property="og:site_name" content="OCE5N Esports" />
+    <meta property="og:title" content="OCE5N Esports | #The71Percent - Multi-Media Gaming Team" />
+    <meta
+      property="og:description"
+      content="OCE5N is a multi-media esports & gaming team based in Columbus, Ohio. Competing, creating, and building community since 2022."
+    />
+    <meta property="og:image" content="https://oce5n.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@OCE5NS" />
+    <meta name="twitter:creator" content="@OCE5NS" />
+    <meta name="twitter:url" content="https://oce5n.com/" />
+    <meta name="twitter:title" content="OCE5N Esports | #The71Percent - Multi-Media Gaming Team" />
+    <meta
+      name="twitter:description"
+      content="Multi-Media Gaming Team since 2022 | Columbus, Ohio | Powered by @SocialSight, @Hypertune_ & @SonixApp"
+    />
+    <meta name="twitter:image" content="https://oce5n.com/og-image.png" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://oce5n.com/#organization",
+          "name": "OCE5N Esports",
+          "alternateName": ["Oce5n", "OCE5NS", "The71Percent"],
+          "url": "https://oce5n.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://oce5n.com/og-image.png"
+          },
+          "description": "Multi-Media Gaming Team based in Columbus, Ohio. Competing and creating since 2022. Powered by SocialSight, Hypertune & Sonix.",
+          "foundingDate": "2022",
+          "location": {
+            "@type": "Place",
+            "name": "Columbus, Ohio, USA"
+          },
+          "sameAs": [
+            "https://twitter.com/OCE5NS",
+            "https://oce5n.com"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://oce5n.com/#website",
+          "url": "https://oce5n.com",
+          "name": "OCE5N Esports",
+          "publisher": { "@id": "https://oce5n.com/#organization" }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Favicon / App Icons -->
+    <link rel="icon" type="image/png" href="/oce5nwhite.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

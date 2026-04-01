@@ -40,7 +40,7 @@ const HomePage = () => {
   return (
     <>
       <SEO
-        title="OCE5N Esports | #The71Percent — Multi-Media Gaming Team"
+        title="OCE5N"
         description="OCE5N is a multi-media esports & gaming team based in Columbus, Ohio. Competing, creating, and building community since 2022. Powered by SocialSight, Hypertune & Sonix."
         path="/"
       />

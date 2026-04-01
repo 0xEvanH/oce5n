@@ -9,7 +9,7 @@ const SOCIALS = [
   {
     label: 'Twitter / X',
     handle: '@OCE5N',
-    url: 'https://x.com/oce5n',
+    url: 'https://x.com/oce5ns',
     icon: SiX,
     color: '#e7e9ea',
     desc: 'Announcements and real-time coverage.',

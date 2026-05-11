@@ -6,12 +6,12 @@ const AboutPage = () => {
   useReveal();
 
   const timeline = [
-    { year: '2022', event: 'OCE5N Founded', desc: 'Description' },
-    { year: '2022', event: 'Milestone', desc: 'Description' },
-    { year: '2023', event: 'Milestone', desc: 'Description' },
-    { year: '2024', event: 'Milestone', desc: 'Description' },
-    { year: '2025', event: 'Milestone', desc: 'Description' },
-    { year: '2026', event: 'Milestone', desc: 'Description' },
+    { year: '2022', event: 'OCE5N Founded', desc: 'Born in Columbus, Ohio under the banner of #The71Percent, OCE5N enters the esports scene with a clear mission — go deeper than the competition.' },
+    { year: '2022', event: 'Valorant Division Launched', desc: "OCE5N's first competitive roster fields in Valorant NA, establishing the org's presence in the tactical shooter space." },
+    { year: '2023', event: 'Community Growth', desc: 'The brand expands its reach, building a loyal following across X, TikTok, and Twitch as content and competition merge.' },
+    { year: '2024', event: 'Sponsors Come Aboard', desc: 'SocialSight, Hypertune, and Sonix join as official partners, fueling the next chapter of OCE5N\'s growth.' },
+    { year: '2025', event: 'Fortnite Division Launched', desc: 'OCE5N enters competitive Fortnite OCE, signing eight high-PR players ready to take over the server.' },
+    { year: '2026', event: 'Dusseldorf Bound', desc: 'Both divisions are locked in and competing at the highest level. The 71 percent has only just begun.' },
   ];
 
   const values = [
@@ -22,10 +22,10 @@ const AboutPage = () => {
   ];
 
   const bigStats = [
-    { n: '0+', l: 'Major Titles' },
-    { n: '0+', l: 'Global Fans' },
-    { n: '0', l: 'Divisions' },
-    { n: '0', l: 'Years Competing' },
+    { n: '1K+',  l: 'Global Fans' },
+    { n: '13th', l: 'Ranking' },
+    { n: '2',    l: 'Divisions' },
+    { n: '4',    l: 'Years Running' },
   ];
 
   return (
@@ -61,11 +61,11 @@ const AboutPage = () => {
           <div className="grid grid-cols-2 gap-20 items-center">
             <div className="rv">
               <p className="leading-loose mb-6" style={{ fontSize: '1.05rem', color: 'var(--offwhite)', opacity: .85 }}>
-                Description.
-                <strong style={{ color: 'var(--white)' }}> Description</strong>
+                OCE5N is a multi-media esports organization representing{' '}
+                <strong style={{ color: 'var(--white)' }}>#The71Percent</strong> — the 71% of the ocean still unexplored. We carry that same spirit into every game we play.
               </p>
               <p className="leading-loose mb-8" style={{ fontSize: '1.05rem', color: 'var(--offwhite)', opacity: .7 }}>
-                Description
+                Founded in Columbus, Ohio in 2022, we compete across Fortnite (OCE) and Valorant (NA) with rosters built on raw talent, relentless preparation, and a refusal to settle.
               </p>
               <div className="grid grid-cols-2 gap-6 pt-8" style={{ borderTop: '1px solid rgba(91,200,255,.12)' }}>
                 {bigStats.map((s, i) => (
@@ -104,8 +104,8 @@ const AboutPage = () => {
                 style={{ background: 'rgba(91,200,255,.08)', transform: 'translate(12px,12px)' }}
               />
               <img
-                src=""
-                alt="Team"
+                src="/oce5npfp.png"
+                alt="OCE5N Team"
                 className="w-full relative z-10"
                 style={{ height: 420, objectFit: 'cover', filter: 'grayscale(.3) brightness(.85)', border: '1px solid rgba(91,200,255,.15)' }}
               />

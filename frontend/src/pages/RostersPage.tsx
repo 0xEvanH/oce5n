@@ -15,10 +15,14 @@ const RostersPage = () => {
       label: 'Fortnite',
       tag: 'OCE5N',
       players: [
-        { name: 'Liamtfup', role: 'OCE5N', country: 'NA', img: '' },
-        { name: 'Teak', role: 'OCE5N', country: 'NA', img: '' },
-        { name: 'Phazma', role: 'OCE5N', country: 'AU', img: '' },
-        { name: 'Creep', role: 'OCE5N', country: 'CA', img: '' },
+        { name: 'phazma',   role: '78K PR · $28K', country: 'OCE', img: '' },
+        { name: 'deymo',    role: '66K PR · $49K', country: 'OCE', img: '' },
+        { name: 'purav',    role: '58K PR · $8K',  country: 'OCE', img: '' },
+        { name: 'solvey',   role: '35K PR · $8K',  country: 'OCE', img: '' },
+        { name: 'Jenga',    role: '32K PR · $4K',  country: 'OCE', img: '' },
+        { name: 'burga',    role: '36K PR · $1K',  country: 'OCE', img: '' },
+        { name: 'voz',      role: '15K PR · $750', country: 'OCE', img: '' },
+        { name: 'harrycuh', role: '25K PR · $1K',  country: 'OCE', img: '' },
       ],
     },
     valorant: {
@@ -26,11 +30,9 @@ const RostersPage = () => {
       label: 'Valorant',
       tag: 'OCE5N',
       players: [
-        { name: 'NAME', role: 'IGL / Duelist', country: 'NA', img: '' },
-        { name: '', role: 'Sentinel', country: 'NA', img: '' },
-        { name: '', role: 'Controller', country: 'NA', img: '' },
-        { name: '', role: 'Initiator', country: 'NA', img: '' },
-        { name: '', role: 'Flex', country: 'NA', img: '' },
+        { name: 'trub',   role: '@trubval',    country: 'NA', img: '' },
+        { name: 'Source', role: '@NotSourceX', country: 'NA', img: '' },
+        { name: 'CHUNK',  role: '@CHUNK_VAL',  country: 'NA', img: '' },
       ],
     },
   };
@@ -38,16 +40,16 @@ const RostersPage = () => {
   const div = divisions[activeDiv];
 
   const fStats = [
-    { k: 'Current Rank', v: '0' },
-    { k: 'Region', v: 'NAC' },
-    { k: 'Roster Size', v: '4 Players' },
+    { k: 'Current Rank', v: 'OCE Top' },
+    { k: 'Region', v: 'OCE' },
+    { k: 'Roster Size', v: '8 Players' },
     { k: 'Cash Cups Won', v: '0' },
   ];
   const vStats = [
-    { k: 'Current Rank', v: '0' },
+    { k: 'Current Rank', v: 'Climbing' },
     { k: 'Region', v: 'NA' },
-    { k: 'Roster Size', v: '5 + Coach' },
-    { k: 'Win Rate', v: '0' },
+    { k: 'Roster Size', v: '3 Players' },
+    { k: 'Win Rate', v: 'TBD' },
   ];
   const teamStats = activeDiv === 'fortnite' ? fStats : vStats;
 
@@ -61,7 +63,16 @@ const RostersPage = () => {
       />
       <div className="page-enter">
 
-        <div className="pt-40 px-12 pb-16 max-w-300 mx-auto">
+        <div
+          className="relative"
+          style={{
+            backgroundImage: `url('/${activeDiv}wallpaper.jpg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        >
+          <div className="absolute inset-0" style={{ background: 'rgba(4,13,26,.88)' }} />
+        <div className="pt-40 px-12 pb-16 max-w-300 mx-auto relative z-10">
           <div className="rv">
             <SectionLabel num="02" label="Our Divisions" />
             <h1
@@ -100,6 +111,7 @@ const RostersPage = () => {
               </button>
             ))}
           </div>
+        </div>
         </div>
 
         <section className="px-12 pb-32 max-w-300 mx-auto">

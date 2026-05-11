@@ -8,14 +8,39 @@ interface Sponsor {
   category: string;
   desc: string;
   logo: string;
+  logoImg?: string;
   url: string;
   since: string;
 }
 
 const SPONSORS: Sponsor[] = [
-  { name: 'Socialsight AI', category: 'Sponsor', desc: 'Description', logo: 'SS', url: '#', since: '2026' },
-  { name: 'Hypertune', category: 'Sponsor', desc: 'Description', logo: 'HT', url: '#', since: '2026' },
-  { name: 'SonixApp', category: 'Sponsor', desc: 'Description', logo: 'SA', url: '#', since: '2026' },
+  {
+    name: 'SocialSight',
+    category: 'Sponsor',
+    desc: 'Create at the Speed of Culture. Go from idea to video in seconds for free with AI. SocialSight gives you limitless creativity to turn ideas into culture-defining moments.',
+    logo: 'SS',
+    logoImg: '/socialsight.png',
+    url: '#',
+    since: '2026',
+  },
+  {
+    name: 'Hypertune',
+    category: 'Sponsor',
+    desc: 'Feature flagging and A/B testing at the edge — helping OCE5N move fast and ship better digital experiences without downtime.',
+    logo: 'HT',
+    logoImg: '/hypertune.jpg',
+    url: '#',
+    since: '2026',
+  },
+  {
+    name: 'Sonix',
+    category: 'Sponsor',
+    desc: 'Ultra-low latency voice chat + AI noise cancellation. Talk at the speed of light. Available now at bit.ly/sonix',
+    logo: 'SX',
+    logoImg: '/sonix.png',
+    url: '#',
+    since: '2026',
+  },
 ];
 
 const CARD_WIDTH = 380;
@@ -232,9 +257,13 @@ const SponsorsPage = () => {
                               letterSpacing: '.1em',
                               color: 'var(--accent)',
                               flexShrink: 0,
+                              overflow: 'hidden',
                             }}
                           >
-                            {sponsor.logo}
+                            {sponsor.logoImg
+                              ? <img src={sponsor.logoImg} alt={sponsor.name} style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '8px' }} />
+                              : sponsor.logo
+                            }
                           </div>
                           <span
                             style={{

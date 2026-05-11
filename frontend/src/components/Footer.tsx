@@ -102,16 +102,40 @@ const Footer = () => {
           >
             {new Date().getFullYear()} OCE5N Esports. All rights reserved.
           </p>
-          <div className="flex gap-6">
-            {['Privacy Policy', 'Terms of Service', 'Cookie Policy'].map((l, i) => (
-              <span
+          <div className="flex gap-6 items-center flex-wrap">
+            {[
+              ['Privacy Policy',    '/privacy-policy'   ],
+              ['Terms of Service',  '/terms-of-service' ],
+              ['Cookie Policy',     '/cookie-policy'    ],
+            ].map(([label, path], i) => (
+              <button
                 key={i}
-                className="cursor-pointer"
-                style={{ fontSize: '.68rem', letterSpacing: '.1em', color: 'var(--offwhite)', opacity: .3 }}
+                onClick={() => go(path)}
+                className="bg-transparent border-0 cursor-pointer p-0"
+                style={{ fontSize: '.68rem', letterSpacing: '.1em', color: 'var(--offwhite)', opacity: .3, fontFamily: "'Barlow', sans-serif", transition: 'opacity .2s' }}
+                onMouseEnter={(e) => (e.currentTarget.style.opacity = '.7')}
+                onMouseLeave={(e) => (e.currentTarget.style.opacity = '.3')}
               >
-                {l}
-              </span>
+                {label}
+              </button>
             ))}
+            <a
+              href="https://x.com/synclairdesign"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                fontSize: '.68rem',
+                letterSpacing: '.1em',
+                color: 'var(--offwhite)',
+                opacity: .3,
+                textDecoration: 'none',
+                transition: 'opacity .2s',
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.opacity = '.7')}
+              onMouseLeave={(e) => (e.currentTarget.style.opacity = '.3')}
+            >
+              Site by @synclairdesign
+            </a>
           </div>
         </div>
       </div>

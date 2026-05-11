@@ -88,7 +88,8 @@ export default function SEO({
     setMeta("name", "keywords", keywords);
     setMeta("name", "theme-color", SITE.themeColor);
     setMeta("name", "robots", noIndex ? "noindex, nofollow" : "index, follow");
-    setMeta("name", "author", SITE.name);
+    setMeta("name", "author", "Synclair Design");
+    setMeta("name", "designer", "Synclair Design");
 
     setLink("canonical", canonicalUrl);
 
@@ -152,6 +153,12 @@ export default function SEO({
           url: "https://oce5n.com",
           name: "OCE5N Esports",
           publisher: { "@id": "https://oce5n.com/#organization" },
+          creator: {
+            "@type": "Person",
+            name: "Synclair Design",
+            url: "https://x.com/synclairdesign",
+            sameAs: ["https://x.com/synclairdesign"],
+          },
         },
         {
           "@type": "WebPage",

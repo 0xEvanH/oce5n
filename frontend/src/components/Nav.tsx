@@ -39,9 +39,35 @@ const Nav = () => {
 
   return (
     <>
-      <nav
-        className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between transition-all duration-300"
+      <div
+        className="fixed top-0 left-0 right-0 z-50 flex items-center justify-center gap-3"
         style={{
+          height: 36,
+          background: 'rgba(212,175,55,.08)',
+          borderBottom: '1px solid rgba(212,175,55,.3)',
+          backdropFilter: 'blur(8px)',
+        }}
+      >
+        <span style={{ width: 4, height: 4, background: '#d4af37', borderRadius: '50%', flexShrink: 0 }} />
+        <span
+          style={{
+            fontFamily: "'Barlow', sans-serif",
+            fontSize: '.65rem',
+            fontWeight: 700,
+            letterSpacing: '.28em',
+            textTransform: 'uppercase',
+            color: '#d4af37',
+          }}
+        >
+          Dusseldorf Bound
+        </span>
+        <span style={{ width: 4, height: 4, background: '#d4af37', borderRadius: '50%', flexShrink: 0 }} />
+      </div>
+
+      <nav
+        className="fixed left-0 right-0 z-50 flex items-center justify-between transition-all duration-300"
+        style={{
+          top:            36,
           padding:        scrolled ? '1rem 3rem' : '1.5rem 3rem',
           background:     scrolled || open ? 'rgba(4,13,26,.96)' : 'transparent',
           backdropFilter: scrolled || open ? 'blur(20px)'        : 'none',
@@ -103,6 +129,7 @@ const Nav = () => {
       <div
         className="md:hidden fixed inset-0 z-40 flex flex-col justify-center items-center gap-3"
         style={{
+          top: 36,
           background: 'rgba(4,13,26,.97)',
           backdropFilter: 'blur(24px)',
           transform: open ? 'translateX(0)' : 'translateX(100%)',

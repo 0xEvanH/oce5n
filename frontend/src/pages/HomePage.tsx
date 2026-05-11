@@ -14,27 +14,26 @@ const HomePage = () => {
       game: 'Fortnite',
       tag: 'OCE5N',
       color: '#85d9ff',
-      img: '',
-      desc: 'Description',
-      stat1: 'FNCS Finalists',
-      stat2: '0 Players',
+      img: '/fortnitewallpaper.jpg',
+      desc: 'Eight OCE players grinding cash cups and climbing the Power Rankings. Built to compete at the top of the server.',
+      stat1: 'OCE Region',
+      stat2: '8 Players',
     },
     {
       game: 'Valorant',
       tag: 'OCE5N',
       color: 'var(--accent)',
-      img: '',
-      desc: 'Description',
-      stat1: '0',
-      stat2: '5 Players + Coach',
+      img: '/valorantwallpaper.jpg',
+      desc: 'A stacked NA roster with the firepower, coordination, and gamesense to make noise at every level.',
+      stat1: 'NA Region',
+      stat2: '3 Players',
     },
   ];
 
   const stats = [
-    { val: '0+', label: 'Major Titles' },
-    { val: '0+', label: 'Global Fans' },
-    { val: '0', label: 'Members' },
-    { val: '0', label: 'Ranking' },
+    { val: '1K+',  label: 'Global Fans' },
+    { val: '11+',  label: 'Members' },
+    { val: '13th', label: 'Ranking' },
   ];
 
   return (

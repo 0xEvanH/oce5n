@@ -25,7 +25,7 @@ const SITE = {
 const DEFAULT_SEO = {
   title: "OCE5N",
   description:
-    "OCE5N is a multi-media esports & gaming team based in Columbus, Ohio. Competing, creating, and building community since 2022. Powered by SocialSight, Hypertune & Sonix.",
+    "OCE5N is a multi-media esports & gaming team based in Columbus, Ohio. Competing, creating, and building community since 2022. Powered by SocialSight & Sonix.",
   keywords:
     "OCE5N, Oce5n Esports, The71Percent, gaming team, esports, Columbus Ohio, Fortnite, FNCS, tournament, competitive gaming, multi-media gaming",
   image: "https://oce5n.com/og-image.png",

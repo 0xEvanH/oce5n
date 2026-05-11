@@ -20,16 +20,7 @@ const SPONSORS: Sponsor[] = [
     desc: 'Create at the Speed of Culture. Go from idea to video in seconds for free with AI. SocialSight gives you limitless creativity to turn ideas into culture-defining moments.',
     logo: 'SS',
     logoImg: '/socialsight.png',
-    url: '#',
-    since: '2026',
-  },
-  {
-    name: 'Hypertune',
-    category: 'Sponsor',
-    desc: 'Feature flagging and A/B testing at the edge — helping OCE5N move fast and ship better digital experiences without downtime.',
-    logo: 'HT',
-    logoImg: '/hypertune.jpg',
-    url: '#',
+    url: 'https://socialsight.ai',
     since: '2026',
   },
   {
@@ -38,7 +29,7 @@ const SPONSORS: Sponsor[] = [
     desc: 'Ultra-low latency voice chat + AI noise cancellation. Talk at the speed of light. Available now at bit.ly/sonix',
     logo: 'SX',
     logoImg: '/sonix.png',
-    url: '#',
+    url: 'https://www.sonix.gg/',
     since: '2026',
   },
 ];
@@ -147,8 +138,8 @@ const SponsorsPage = () => {
     <>
       <SEO
         title="Sponsors & Partners | OCE5N Esports"
-        description="OCE5N is proudly powered by SocialSight, Hypertune & Sonix. Interested in partnering with #The71Percent? Learn about sponsorship and investment opportunities."
-        keywords="OCE5N sponsors, esports sponsorship, OCE5N partners, SocialSight, Hypertune, Sonix, esports investment, Columbus Ohio esports"
+        description="OCE5N is proudly powered by SocialSight & Sonix. Interested in partnering with #The71Percent? Learn about sponsorship and investment opportunities."
+        keywords="OCE5N sponsors, esports sponsorship, OCE5N partners, SocialSight, Sonix, esports investment, Columbus Ohio esports"
         path="/sponsors"
       />
       <div>
